@@ -1,0 +1,104 @@
+html {
+  overflow-y: scroll;
+}
+body, table {
+  color: #003;
+  background-color: #fef;
+}
+#menulist { 
+  position: absolute;
+  top: 0; left: 0; bottom: 0; width: 180px; 
+  border-right: 1px solid #143db3; 
+  font-weight: bold; 
+  background-color: #b29eff;
+}
+html>body #menulist{
+  position: fixed;
+}
+#sigsaclogo {
+  height: 120px;
+  margin-bottom: 48px;
+  background: #b29eff url(sigsac.gif) no-repeat center;
+}
+
+#menulist ul { 
+  margin: 20px 0 0 0; 
+  padding-left: 0;
+  list-style-type: none; 
+  border-top: 1px solid #143db3; 
+  height: 500px;
+}
+#menulist ul a  { 
+  display: block; 
+  width: 160px; 
+  border-bottom: 1px solid #143db3; 
+  padding: 2px 0 2px 20px;
+  color: #030; 
+} 
+#menulist ul a:link, #menulist ul a:visited { text-decoration: none; }
+#menulist ul a:hover { background: #fcfcff; }
+.sel, .offsel { 
+  background: #cad7fd; color: #143db3; 
+  display: block; 
+  width: 160px; 
+  border-bottom: 1px solid #143db3; 
+  padding: 2px 0px 2px 20px;
+}
+#menulist ul .off { color : #6080b0; }
+#menulist ul .offsel { color : #6080b0; }
+#menulist ul .off:hover { background: #9eb2ed; color: #406090; }
+
+#main { 
+  font-family: Georgia, Times, serif;
+  margin: 30px 70px 50px 250px; 
+  min-height: 480px;
+  height: auto !important;
+  height: 480px;
+  text-align: justify;
+}
+#main ul { margin-left: 1em; padding-left: 1em; }
+#main li { padding-bottom: .4em; }
+#main h1 { 
+  text-align: center; 
+  font-size: 200%; 
+  font-weight: bold; 
+  font-family: Arial;
+}
+#main h3 { margin-top: 1.5em; color: #143db3;}
+
+#header {
+  background: #fef url(drm2008.gif) no-repeat center;
+  padding-top: 120px;
+  margin-bottom: 40px;
+  font-style: italic;
+  font-size: smaller;
+  text-align: right;
+}
+#footer {
+  font-size: 9px;
+  color: #446;
+  padding-bottom: 1em;
+  margin-left: 180px;
+  text-align: right;
+  border-top: 1px solid #446;
+}
+
+.sheader {
+  background: #cad7fd;
+  font-size: larger;
+  font-weight: bold;
+  font-style: italic;
+  margin-top: 2em;
+  text-align: center;
+}
+.schair {
+  text-align:right; 
+  font-size: small; font-weight: normal;
+}
+.stime {
+  padding-right: 2em;
+  text-align: right;
+  vertical-align: top;
+}
+.spacer { font-size: 2pt; }
+.emph { color: red; font-weight: bolder; }

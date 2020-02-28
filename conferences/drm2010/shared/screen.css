@@ -1,0 +1,107 @@
+/*
+;; screen.css --- 
+;; Marc Joye
+;; Last Modified On: Fri Sep 10 09:00:47 2010
+*/
+
+* {font-family: "trebuchet ms", helvetica, sans-serif;}
+html {overflow-y: scroll;}
+body, table {color: #200; background-color: #fef;}
+#menulist { 
+  position: absolute;
+  top: 0; left: 0; bottom: 0; width: 180px; 
+  border-right: 2px solid #999;
+  font-weight: bold; 
+  background-color: #333;}
+html>body #menulist{position: fixed;}
+#drmlogo {height: 135px; margin: 26px 0 40px 26px;}
+#drmlogo img {border:none;}
+.spacer {margin-top: 2.5em;}
+#menulist ul { 
+  padding: 0; margin: 0;
+  list-style: none; list-style-image: none;}
+#menulist ul a  { 
+  display: block; 
+  width: 100%; 
+  border: 2px solid #a88;
+  padding: 8px 0px 8px 10px;
+  margin: 5px;
+  color: #533;  background: #f0d9d9;} 
+html>body #menulist ul a {width: auto;}
+#menulist ul a:link, #menulist ul a:visited { text-decoration: none;}
+#menulist ul a:hover {background: #fdd; color: #755; border: 2px solid #dbb;}
+#menulist .sel, #menulist .offsel {
+  background: #977; color: #fdd; border: 2px solid #fdd;}
+#menulist ul .off {color: #ceacac;}
+#menulist ul .off:hover {color: #ebc9c9; background: #ffeaea;}
+
+#main { 
+  font-size: 14px;
+  margin: 30px 70px 50px 250px; 
+  min-height: 480px; height: auto !important; height: 480px; 
+  text-align: justify;}
+#main ul {margin: .6em 0 0 1em; padding-left: 1em;}
+#main li {padding-bottom: .4em;}
+#main h1 { 
+  text-align: center; padding: 10px;
+  font-size: 200%; color: #666;
+  margin-bottom: 1em; font-weight: bold;}
+#main h1:before, #main h1:after{content: " "url(drm_bullet.png)" ";}
+
+#main h2 {width: 35%; border: solid #626; border-width: 0px 1px 2px 0px;
+  padding: 10px 0 2px 18px; text-align: left;
+  font-size: larger; margin-top: 2em; color: #626; 
+  font-style: italic;}
+#main h3 {font-size: medium; font-weight: bold; color: #333;
+  margin-bottom: 0px; padding-bottom: 0px;}
+
+#header {
+  background: #fef url(drm_banner.png) no-repeat center;
+  padding-top: 280px; margin-bottom: 40px;
+  font-style: italic; font-size: smaller; text-align: right;}
+#footer {font-size: 9px; color: #688; 
+  padding-bottom: 1em; margin-left: 180px; text-align: right;}
+
+.sheader {background: #cad7fd;
+  font-size: larger; font-weight: bold; font-style: italic;
+  margin-top: 2em; text-align: center;}
+table {padding-left: 15px; border-style: none; text-align: left;}
+a:active, a:focus {outline: none;}
+a, a:visited {color:blue;}
+.imglogo {text-align: center;}
+.imglogo a img {
+  border: none; text-decoration: none;
+  vertical-align: middle; margin: 12px;}
+
+.affil {padding-left: 24px;color: #444; font-size: smaller; font-style: italic;}
+strong{font-weight: bold; color: red;}
+em {color: red;}
+#cfp-pdf {
+  font-size: smaller; font-style: italic; text-align: right;}
+#cfp-pdf a {font-size: smaller;
+  font-style: normal; text-decoration: none;}
+#cfp-pdf a:hover {font-size: smaller;
+  font-style: normal; text-decoration: underline;}
+#program tr .stime, #program tr .stime2 {padding-right: 3em; text-align: right; 
+  vertical-align: top; width:20%;}
+#program tr .stime2 {padding-top:1.5em;}
+#program th {background: #f0eded; color: #240404;
+  font-size: larger; font-weight: bold; font-style: italic; 
+  text-align: center; border: solid #666; border-width: 1px 0px 1px 0px;}
+#program .spacer {margin-top:0pt; font-size:2pt;}
+#program .schair {text-align:right; font-size: x-small; 
+  font-weight: normal; background: #efecec;}
+#program .sloc {font-style:normal; font-size:14px; 
+  font-weight: normal; margin-left:1em;}
+#registrationfees td,th {
+  padding: .3em; border: 1px solid #666;}
+#registrationfees { margin:2em; 
+  border-collapse: collapse;
+  /* fix for IE6 and below */ font-size: 1em;}
+#registrationfees th {
+  color: #240404;
+  text-align:left;
+  margin: 0; padding-right: .5em; padding-left: .5em;
+  background: #f0eded;}
+#registrationfees th.nobg {border-top: 0; border-left: 0; background: none;}
+.cont_map {margin-bottom: 30px; text-align: center;}

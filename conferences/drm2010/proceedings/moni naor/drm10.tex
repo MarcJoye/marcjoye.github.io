@@ -1,0 +1,224 @@
+\documentclass{sig-alternate}
+
+
+\def\draft{0}   % 1 for working draft
+
+\ifnum\draft=1 % show authors' note if draft
+    \def\ShowAuthNotes{1}
+\else
+    \def\ShowAuthNotes{0}
+\fi
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Author's notes
+\ifnum\ShowAuthNotes=1
+\newcommand{\authnote}[2]{{ \footnotesize \bf{\color{Red}[#1's Note: {\color{Blue}#2}]}}}
+\else
+\newcommand{\authnote}[2]{}
+\fi
+
+\newcommand{\cnote}[1]{{\authnote{Cynthia} {#1}}}
+\newcommand{\gnote}[1]{{\authnote{Guy} {#1}}}
+\newcommand{\mnote}[1]{{\authnote{Moni} {#1}}}
+\newcommand{\onote}[1]{{\authnote{Omer} {#1}}}
+\newcommand{\snote}[1]{{\authnote{Salil} {#1}}}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{remark}{Remark}[section]
+
+\newtheorem{lemma}[theorem]{Lemma}%[section]
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{claim}[theorem]{Claim}%[section]
+\newtheorem{fact}{Fact}[section]
+
+\newtheorem{definition}{Definition}[section]
+
+\newcommand{\C}{\mathcal C}
+\newcommand{\U}{\mathcal U}
+\newcommand{\M}{\mathcal M}
+\newcommand{\T}{\mathcal T}
+\newcommand{\SM}{\mathcal C}
+\newcommand{\A}{\mathcal A}
+\newcommand{\B}{\mathcal B}
+\newcommand{\V}{\mathcal V}
+\newcommand{\D}{\mathcal D}
+\newcommand{\E}{\mathcal E}
+\newcommand{\F}{\mathcal F}
+\newcommand{\Hw}{\mathcal H}
+\newcommand{\Orc}{\mathcal O}
+\newcommand{\Prog}{\mathcal P}
+\newcommand{\Adv}{\mathcal A}
+\newcommand{\Rand}{\mathcal R}
+\newcommand{\Obf}{\mathcal O}
+\newcommand{\Sim}{\mathcal S}
+\newcommand{\Protocol}{\mathcal P}
+\newcommand{\Le}{\mathcal L}
+\newcommand{\Pre}{\mathcal P}
+\newcommand{\Sam}{\mathcal S}
+\newcommand{\G}{\mathcal G}
+\newcommand{\Hash}{\mathcal H}
+\newcommand{\Rt}{\mathbb{R}}
+\newcommand{\Nt}{\mathbb{N}}
+\newcommand{\grad}{\nabla}
+\newcommand{\secp}{\kappa}
+\newcommand{\sbd}{s_{bad}}
+\newcommand{\Dstb}{\mathcal D}
+\newcommand{\DB}{D}
+
+
+
+\newcommand{\remove}[1]{}
+
+\def\zo{\{0,1\}}
+
+\newcommand{\Zn}{}
+\newcommand{\Z}[1]{\mathbb{Z}^*_{#1}}
+\newcommand{\eps}{\varepsilon}
+%\newcommand{\prob}{{\rm Pr}}
+\newcommand{\pr}[2]{\prob_{#1}\left[ #2\right]}
+\newcommand{\poly}{{\rm poly}}
+\newcommand{\com}{{\rm com}}
+\newcommand{\negl}{{\rm negl}}
+\newcommand{\NP}{{\mbox{NP}}}
+\newcommand{\BPP}{{\cal BPP}}
+\newcommand{\polylog}{{\rm polylog}}
+
+\newcommand{\Lap}{\mathit{Lap}}
+\newcommand{\Gen}{\mathit{Gen}}
+\newcommand{\Sign}{\mathit{Sign}}
+\newcommand{\Verify}{\mathit{Verify}}
+\newcommand{\Setup}{\mathit{Setup}}
+\newcommand{\Enc}{\mathit{Enc}}
+\newcommand{\Dec}{\mathit{Dec}}
+\newcommand{\Trace}{\mathit{Trace}}
+\newcommand{\Encrypt}{\mathit{Encrypt}}
+\newcommand{\Decrypt}{\mathit{Decrypt}}
+\newcommand{\mysmall}{\mathit{small}}
+
+\newcommand{\myparagraph}[1]{\medskip \noindent \textbf{#1}}
+
+\newcommand\op[1]{}
+
+\begin{document}
+\conferenceinfo{DRM'10,} {Oct 4, 2010, Chicago, Illinois,
+USA.} \CopyrightYear{2010} \crdata{978-1-60558-506-2/09/05}
+
+\title{The Privacy of Tracing Traitors}
+
+
+
+\numberofauthors{1}
+\author{
+\alignauthor Moni Naor\titlenote{Incumbent of the Judith Kleeman Professorial Chair, Department of Computer
+Science and Applied Mathematics, Weizmann Institute of Science,
+Rehovot 76100, Israel. E-mail: \texttt{moni.naor@weizmann.ac.il}.
+Research supported in
+part by a grant from the Israel Science Foundation.}\\
+\affaddr{Weizmann Institute of Science}
+}
+
+
+\date{}
+
+\maketitle
+
+
+In this talk I will explore a connection between {\bf traitor tracing} schemes and the problem of {\bf sanitizing} data to remove personal information 
+while allowing statistically meaningful information to be released. It is based on joint work with Cynthia Dwork, Omer Reingold, Guy N. Rothblum and Salil Vadhan~\cite{DNRRV}
+
+{\bf Traitor tracing} schemes are  method of content
+distribution which  enable a publisher to trace a pirate
+decryption box to a secret key (of a treacherous user) that was used
+to create the box.  For example, consider a content provider who
+wishes to broadcast his content to a group of subscribers. To do
+this, he gives each of the subscribers a decryption box that uses a
+secret key. Unfortunately, a subscriber might now build and
+distribute a pirate decoder. Traitor tracing schemes ensure that if
+such a pirate decoding box is found, the content distributer can run
+a {\em tracing} algorithm to recover at least one private key used
+to create the box, and perhaps try to take legal action against this
+subscriber. Tracing schemes were first formally introduced by Chor, Fiat and
+Naor~\cite{ChorFN94} and there are many constructions with various
+choices of the parameters (see \cite{BonehN08} for recent
+references).
+
+Consider {\bf private data analysis} in the setting in which a trusted
+and trustworthy curator, having obtained a large data set containing
+private information, releases to the public a ``sanitization'' of the
+data set that simultaneously protects the privacy of the individual
+contributors of data and offers utility to the data analyst. 
+The sanitization may be in the form of an arbitrary data structure,
+accompanied by a computational procedure for determining approximate
+answers to queries on the original data set. Alternatively it may be in the 
+form of a ``synthetic data set'' consisting of data items drawn from the same
+universe as items in the original data set; queries are carried out as
+if the synthetic data set were the actual input.  
+
+The ``gold standard" of privacy that has emerged in recent years is that of {\em differential privacy}:
+for any two neighboring data sets, one containing information about an individual and the other one not containing it,
+for any possible string released by the curator it should be difficult distinguish which of the two possible data sets yielded that response.
+
+Recently there have been several powerful results showing that it is possible to sanitize
+data sets while allowing relatively accurate answers to queries.  
+For instance, Blum, Ligett and Roth (STOC `08) showed the following:
+Let $X$ be a universe of data items and
+$\C$ be a ``concept'' class consisting of efficiently computable
+functions $f : X\rightarrow \{0,1\}$. 
+Given a database $x\in X^n$, it is possible to obtain a {\em synthetic database} that remarkably
+maintains approximately correct fractional counts for {\em all} concepts in $\C$, while ensuring a strong privacy guarantee in the above sense. 
+
+The downside is that resulting mechanism is {\em not}, in general,  
+computationally efficient and the natural question is whether it possible to obtain efficient solutions.
+It turns out that this question has deep connections to cryptography. 
+When either $|\C|$ or $|X|$ are superpolynomial and assuming
+the existence of one-way functions there exist
+distributions on data sets and a choice of $\C$ for which there is no efficient private
+construction of a {\em synthetic} data set maintaining approximately correct
+counts.
+
+Turning to the potentially easier problem of privately generating a
+data structure from which it is possible to approximate counts, there
+is a tight connection between hardness of sanitization and the
+existence of {\em traitor tracing} schemes. Using the scheme of Boneh, Sahai and Waters \cite{BonehSW06}, and under the 
+appropriate  complexity assumptions,  it is possible
+to obtain a distribution on
+databases and a concept class permitting {\em inefficient} sanitization, but for which {\em no efficient sanitization is
+possible}.
+
+\begin{thebibliography}{10}
+%MN1 added a small skip to look better
+\vskip 0.1in
+\bibitem{BlumLR08}
+A.~Blum, K.~Ligett, and A.~Roth.
+\newblock A learning theory approach to non-interactive database privacy.
+\newblock In {\em STOC}, pages 609--618, 2008.
+
+\bibitem{BonehN08}
+D.~Boneh and M.~Naor.
+\newblock Traitor tracing with constant size ciphertext.
+\newblock In {\em ACM Conference on Computer and Communications Security},
+  pages 501--510, 2008.
+
+\bibitem{BonehSW06}
+D.~Boneh, A.~Sahai, and B.~Waters.
+\newblock Fully collusion resistant traitor tracing with short ciphertexts and
+  private keys.
+\newblock In {\em EUROCRYPT}, pages 573--592, 2006.
+
+\bibitem{ChorFN94}
+B.~Chor, A.~Fiat, and M.~Naor.
+\newblock Tracing traitors.
+\newblock In {\em CRYPTO}, pages 257--270, 1994.
+
+\bibitem{DNRRV}
+C.~Dwork, O.\~Reingold, G.~N.~Rothblum and S.~Vadhan, 
+\newblock On the Complexity of Differentially Private Data Release
+\newblock In {\em STOC}, pages 381--390, 2009.
+
+\end{thebibliography}
+
+
+
+
+\end{document}

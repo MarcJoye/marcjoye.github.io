@@ -1,0 +1,143 @@
+/*
+;; common.css --- 
+;; Marc Joye
+;; Last Modified On: Sun Sep 26 08:07:38 2010
+*/
+
+html {margin:0; padding:0; border:0; width:100%; height:100%;}
+body {margin:0; padding:0; border:0; width:100%; height:100%; 
+  background:#f6f6f6;}
+*{
+  font-family:Verdana, Geneva, Arial, Helvetica, sans-serif; 
+  font-size:13px; line-height:15px;}
+strong {font-weight:bold; color:red;}
+em {font-style:normal; color:red;}
+a:link, a:visited{color:#2E4299; text-decoration:underline;}
+a:hover, a:active{color:#5268CC; text-decoration:underline;}
+a.txt:link, a.txt:visited {
+  border:solid #2E4299; border-width:0 0 1px 0; padding:0; 
+  color:#2E4299; text-decoration:none;}
+a.txt:hover, a.txt:active {
+  border:solid #5268CC; border-width:0 0 1px 0; padding:0; 
+  color:#5268CC; text-decoration:none;}
+.text {padding:0 15px;}
+.spacer {margin-top:30px; text-align: justify;}
+.cont_logos {margin-top: 30px; text-align: center;}
+.logo {padding:35px;}
+
+h1 {border:solid #1343a9; border-width:1px 0; text-align:left; 
+  margin:30px 0 15px; padding:5px 0 5px 11px; color:#372a3d; 
+  font-size:18px; font-weight:bold; line-height:21px; background:#f5f8ea;}
+h2 {width:70%; border:solid #1641aa; border-width:0 0 1px 4px; 
+  padding:1px 0 2px 7px; text-align:left; margin:30px 0 15px; 
+  color:#3c3a3c; font-size:14px; font-weight:bold; line-height:19px;}
+h3 {text-align:left; margin:20px 0 10px; padding:0; 
+  color:#333a33; font-size:13px; font-weight:bold; line-height:16px;}
+h4, table th {text-align:left; margin:0 0 1px; 
+  color:#333a33; font-size:13px; font-weight:bold; line-height:14px;}
+
+p{margin:0 0 12px; line-height:18px; text-align: justify;}
+
+ul{margin:0 0 0 32px; padding:0; 
+  list-style-image:url('../shared/i_blue01.gif');}
+li{margin:0; padding:0 0 3px;}
+table {border-style: none;}
+#topics table {table-layout: fixed;}
+#topics table th {padding: 10px 0 5px 0; text-align:center;}
+#topics table tr {vertical-align: top;}
+#topics table tr td {overflow: hidden;}
+#topics table tr td ul{margin: 0 0 0 24px;}
+
+.affil{padding-left: 18px;color: #444; font-size: 12px; font-style: italic;}
+
+#container{
+  width:774px; background:#ffffff url('./bg_navi.gif') repeat-y;}
+#header{width:774px; padding-bottom:2px;}
+#contents{float:right; width:618px; min-height:590px; height:auto !important;height:590px;}
+#contents_inner{margin:10px; padding:0 20px 50px 25px;}
+.bn_lncs{margin-left:2px; margin-top:30px;}
+
+#cfp-pdf {
+  font-size: smaller; font-style: italic; text-align: right;}
+#cfp-pdf a {font-size: smaller;
+  font-style: normal; text-decoration: none;}
+#cfp-pdf a:hover {font-size: smaller;
+  font-style: normal; text-decoration: underline;}
+
+#footer{clear:both; height:30px; border:solid #ffffff; border-width:0 0 2px;}
+#footer_inner{
+  margin-left:176px; width:587px; border:solid #1343a9; 
+  border-width:2px 0 0; text-align:right; color:#3c3c3c; 
+  font-size:8px; font-weight:bold;}
+
+#navi{float:right; width:156px; padding-bottom:40px;}
+#menulist{
+  position:absolute;
+  top:190px; left:3px; bottom:0; width:155px;}
+/*
+<!--[if lte IE 6]>
+body > #menulist { 
+  position: absolute;}
+<! endif -->
+*/
+#menulist ul{
+  margin:2px 0 0 0; padding-left:0;
+  list-style-type:none; list-style-image:none;}
+#menulist ul a{
+  display:block;
+  font-size:13px; border:2px solid #1343a9;
+  padding:5px 0px 5px 10px;
+  background:#558ce7; color: #030;} 
+#menulist ul a:link, #menulist ul a:visited {text-decoration:none;}
+#menulist ul a:hover {background:#9eb2ed; color:#030399;}
+#menulist ul .sel, #menulist ul .offsel {
+  border:2px solid #888;
+  background:#1343a9; color:#ebefd6; font-weight:bold;}
+#menulist ul .off{color:#5070a0;}
+#menulist ul .offsel{color:#5070a0;}
+#menulist ul .off:hover{background:#7e92cd; color:#406090;}
+a:active, a:focus {outline: none;}
+
+#sponsors{margin-left: 0px; margin-top: 24px; text-align: center; }
+#sponsors img{text-decoration: none; border: none; padding-bottom: 22px;}
+
+.table_invited {
+  width:90%;margin:0px 0px 10px 0px; padding:0px; margin:1em 0 1em 0;
+  border-collapse:collapse;
+  border-top:1px dotted #999;}
+.table_invited th {
+  width:15%;padding:4px 2px 2px 4px;
+  text-align:left;vertical-align:top;color:#666;
+  background-color:#eee;
+  border-bottom:1px dotted #999;border-left:4px solid #1641aa;}
+.table_invited td {
+  padding:4px 2px 2px 4px;
+  border-bottom:1px dotted #999;border-left:3px double #ccc;
+}
+.table_noborder td {border: none;}
+
+#registrationfees td,th {
+  padding: .3em; border: 1px solid #666;}
+#registrationfees { margin:2em; 
+  border-collapse: collapse;
+  /* fix for IE6 and below */ font-size: 1em;}
+#registrationfees th {
+  color: #111;
+  text-align:left;
+  margin: 0; padding-right: .5em; padding-left: .5em;
+  background: #ccc;}
+#registrationfees th.nobg {border-top: 0; border-left: 0; background: none;}
+
+#program {width:90%;}
+#program th {border:solid #1641aa;border-width:0 0 1px 4px;
+  text-align:left;padding:1px 0 2px 7px;
+  color:#3c3a3c;font-size:14px;font-weight:bold;line-height:19px;}
+#program .day {background:#1641aa;color:#ebefd6;
+  font-weight:bold;font-size:15px; text-align:center;line-height:24px;}
+#program .stime {padding-right:2.5em;text-align:right; 
+  vertical-align:top;width:30%; 
+  font-weight:normal;font-size:13px;}
+#program .spacer {margin:0pt;padding:0pt;font-size:2pt;}
+#program .schair {text-align:right;font-size: x-small; 
+  font-weight: normal;}
+#program a {text-decoration:none;color:red;}
