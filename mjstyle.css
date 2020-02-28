@@ -1,5 +1,5 @@
 /*
- Last Modified On: Thu Sep  6 14:56:16 2018 (-0700)
+ Last Modified On: Fri Feb 28 19:01:57 2020 (+0100)
 */
 html, body {height: 100%; margin:1px; padding:0;}
 @media screen and (min-width: 768px){
@@ -93,5 +93,3 @@ html>body #main {height: auto;}
 #menulist li ul li a:before {content: ">\0020";}
 .dlmulticols dl {float: left; padding-left: 1em; width: 15em;}
 #linkedin {float:right;}
-/* remove powered by 000webhost */
-div:last-child a img {display: none;}﻿
