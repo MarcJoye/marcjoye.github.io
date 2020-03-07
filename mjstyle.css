@@ -1,5 +1,5 @@
 /*
- Last Modified On: Mon Mar  2 14:38:01 2020 (+0100)
+ Last Modified On: Sat Mar  7 07:43:50 2020 (+0100)
 */
 html, body {height: 100%; margin:1px; padding:0;}
 @media screen and (min-width: 768px){
@@ -41,7 +41,7 @@ a:link:hover, a:visited:hover,
 .showPDF a[href $='.pdf'], .showPDF a[href $='.pdf']:hover, .showPDF a.pdffile {padding-left: 18px !important; margin-left: 8px;
   background: transparent url("img/pdf.png") center left no-repeat !important;
   text-decoration: underline; border-style: none; font-size: x-small;}
-.showPDF a[href $='.ps'], .showPDF a[href $='.ps']:hover, .showPDF a.pdffile {padding-left: 18px !important; margin-left: 8px;
+.showPDF a[href $='.ps'], .showPDF a[href $='.ps']:hover, .showPDF a.psfile {padding-left: 18px !important; margin-left: 8px;
   background: transparent url("img/ps.png") center left no-repeat !important;
   text-decoration: underline; border-style: none; font-size: x-small;}
 .box {background-color: #00CCFF;
