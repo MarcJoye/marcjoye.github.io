@@ -1,5 +1,5 @@
 /*
- Last Modified On: Sun Aug  2 10:56:35 2020 (+0200)
+ Last Modified On: Mon Sep 28 14:11:57 2020 (+0200)
 */
 html, body {height: 100%; margin:1px; padding:0;}
 @media screen and (min-width: 768px){
@@ -58,11 +58,11 @@ td {vertical-align: top; padding-bottom: 10px; padding-left: 1.5em;}
   opacity: 1; filter: alpha(opacity=100);}
 #main {min-height: 300px; heigth: 300px; padding: 1px 3px;}
 @media screen and (min-width: 768px){
-  #main {padding: 1em 3em; border-radius: 20px;}}  
+  #main {padding: 1em 3em; border-radius: 0px;}}  
 html>body #main {height: auto;}
 #menulist ul, #menulist li, #menulist span, #menulist a {
   margin: 0; padding: 0; position: relative; border-style: none;}
-#menulist {background-color: #26221f;
+#menulist {background-color: #000000;
   padding: 10px; border-radius: 12px;}
 @media screen and (min-width: 768px){#main, #menulist {margin: 10px 10%;}}
 #menulist ul {list-style: none; text-align:center;}
@@ -83,7 +83,7 @@ html>body #main {height: auto;}
 #menulist > ul > li.active a {color: #daa520;}
 #menulist ul > li a:hover {color: #ffdb58;}
 #menulist > ul > li.active a:hover {color: #ffdb58;}
-#menulist > ul > li a {background-color: #26221f;
+#menulist > ul > li a {background-color: #000000;
   line-height: 30px; padding: 0px 9px; min-width: 6.7em;}
 #menulist li > ul > li a:hover {background-color:#0c0c0c;}
 #menulist li ul li {text-align: left; white-space: nowrap;}
