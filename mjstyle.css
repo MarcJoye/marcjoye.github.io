@@ -1,5 +1,5 @@
 /*
- Last Modified On: Sun Oct  3 08:37:26 2021 (+0200)
+ Last Modified On: Sun Oct  3 08:38:45 2021 (+0200)
 */
 html, body {height: 100%; margin:1px; padding:0;}
 @media screen and (min-width: 768px){
@@ -16,7 +16,7 @@ html, body {height: 100%; margin:1px; padding:0;}
 @media screen and (max-width: 767px){html{background-color: #ece8be;}}
 body, table {color: #2b1b17;    
   font: 18px Century Gothic, Verdana, Arial, Helvetica, sans-serif;}
-h1 {color: #493d26; font-size: 50px; font-variant: small-caps;
+h1 {color: #493d26; font-size: 48px; font-variant: small-caps;
     text-align:center; margin-top: .3em;}
 @media screen and (max-width: 767px){h1 {display:none;}}
 h2, h2 a {color: #f88017; font-size: 30px; font-variant: small-caps;
