@@ -1,7 +1,7 @@
 /*
 ;; screen.css --- 
 ;; Marc Joye
-;; Last Modified On: Sun Dec  5 15:17:29 2021 (+0100)
+;; Last Modified On: Mon Dec  6 07:34:39 2021 (+0100)
 */
 
 html, body {
@@ -18,7 +18,7 @@ em{font-style: normal; color: #1717ea;}
 a:active, a:focus {outline: none;}
 h1 {
   padding: 6px 0 6px 0; margin-bottom: 30px;
-  border:dashed #060621; border-width:1px 0; background:#e8e8f2;
+  border:dashed #060621; border-width:1px 0; background:#e8e8ef;
   text-align: center; font-size: 18px;}
 h2 {width: 270px;; border: solid #3b3b72; border-width: 0 0 1px 1px;
   padding: 1px 0 2px 19px; text-align: left; margin: 30px 0 15px 0; 
