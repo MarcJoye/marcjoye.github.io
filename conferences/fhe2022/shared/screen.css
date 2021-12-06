@@ -1,7 +1,7 @@
 /*
 ;; screen.css --- 
 ;; Marc Joye
-;; Last Modified On: Mon Dec  6 14:55:15 2021 (+0100)
+;; Last Modified On: Mon Dec  6 16:22:53 2021 (+0100)
 */
 
 html, body {
@@ -20,7 +20,7 @@ h1 {
   padding: 6px 0 6px 0; margin-bottom: 30px;
   border:dashed #060621; border-width:1px 0; background:#e8e8ef;
   text-align: center; font-size: 18px;}
-h2 {width: 270px;; border: solid #3b3b72; border-width: 0 0 1px 1px;
+h2 {width: 380px;; border: solid #3b3b72; border-width: 0 0 1px 1px;
   padding: 1px 0 2px 19px; text-align: left; margin: 30px 0 15px 0; 
   font-size: 14px; font-weight: bold; color: #0d0d33; line-height: 19px;}
 h3 {text-align: left; margin: 20px 0 5px 10px; padding: 0; 
@@ -60,7 +60,7 @@ table.fullwidth {width: 100%;}
 #main {
   background-color: #f1f1f1;
   border-left: 1px solid #aaa; border-right: 1px solid #aaa;
-  margin: 0 10px 0px 160px; /* width: 572px; */
+  margin: 0 10px 0px 180px; /* width: 572px; */
   padding: 20px;
   min-height: 578px; height:auto !important; height:578px;}
 html>body #main { 
@@ -70,9 +70,9 @@ html>body #main {
   vertical-align: middle; margin: 12px;}
 #leftcolumn {
   background-image:url('./fhe-org.png'); background-repeat:no-repeat;
-  background-size: 150px;  
+  background-size: 170px;  
   float: left; position: fixed;
-  top: 40px; left: 5px; width: 150px;}
+  top: 40px; left: 5px; width: 170px;}
 /*
 <!--[if lte IE 6]>
 body > #leftcolumn { 
