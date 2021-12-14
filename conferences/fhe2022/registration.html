@@ -8,29 +8,6 @@
   <meta name="keywords" content="FHE.org, Fully Homomorphic Encryption Conference" />
   <link media="screen" href="./shared/screen.css" type="text/css" rel="stylesheet" />
   <link media="print" href="./shared/print.css" type="text/css" rel="stylesheet" />
-  <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
-  <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
-  <script type="text/javascript">
-    function initialize() {
-      var latlng = new google.maps.LatLng(48.866053,2.356456);
-      var settings = {
-	zoom: 16,
-	center: latlng,
-	mapTypeControl: true,
-	mapTypeControlOptions: {style: google.maps.MapTypeControlStyle.DROPDOWN_MENU},
-	navigationControl: true,
-	navigationControlOptions: {style: google.maps.NavigationControlStyle.SMALL},
-	mapTypeId: google.maps.MapTypeId.ROADMAP
-    };
-    var map = new google.maps.Map(document.getElementById("map_canvas"), settings);
-    var conferencePos = new google.maps.LatLng(48.866053,2.356456);
-    var conferenceMarker = new google.maps.Marker({
-      position: conferencePos,
-      map: map,
-      title:"Conference venue"
-  });
-    }
-  </script> 
 </head>
 
 <body>
