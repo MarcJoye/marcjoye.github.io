@@ -1,7 +1,7 @@
 /*
 ;; screen.css --- 
 ;; Marc Joye
-;; Last Modified On: Mon Dec  6 16:22:53 2021 (+0100)
+;; Last Modified On: Wed Jan 12 07:05:49 2022 (+0100)
 */
 
 html, body {
@@ -125,7 +125,7 @@ html>body #menulist ul a {width: auto;}
 .cont_map {margin-bottom: 30px; text-align: center;}
 
 #partners{margin-left: 0px; margin-top: 50px; text-align: center;}
-#partners img{text-decoration: none; border: none; padding-bottom: 5px;}
+#partners img{text-decoration: none; border: none; padding-bottom: 5px; max-width:90px;}
 
 .table_invited {
   width:95%; padding:0; margin:1em 0 1em 0;
