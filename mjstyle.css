@@ -1,11 +1,11 @@
 /*
- Last Modified On: Sun Oct  3 08:38:45 2021 (+0200)
+ Last Modified On: Sat Sep  3 09:47:13 2022 (+0200)
 */
 html, body {height: 100%; margin:1px; padding:0;}
 @media screen and (min-width: 768px){
   html {/*overflow-y: hidden;*/
     /*background: url("img/security.jpg") no-repeat 0 0 fixed;*/
-    background-color: #ece8be;  
+      background-color: #f8cb45;
     /*-webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -13,7 +13,7 @@ html, body {height: 100%; margin:1px; padding:0;}
     -webkit-background-size: 100% 100%; -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%; background-size: 100% 100%;}}
 /*body {overflow-y: scroll;}*/
-@media screen and (max-width: 767px){html{background-color: #ece8be;}}
+@media screen and (max-width: 767px){html{background-color:#f8cb45;}}
 body, table {color: #2b1b17;    
   font: 18px Century Gothic, Verdana, Arial, Helvetica, sans-serif;}
 h1 {color: #493d26; font-size: 48px; font-variant: small-caps;
