@@ -1,97 +1,97 @@
 /*
- Last Modified On: Sat Sep  3 09:47:13 2022 (+0200)
+ Last Modified On: Sat Sep  3 10:22:51 2022 (+0200)
 */
-html, body {height: 100%; margin:1px; padding:0;}
-@media screen and (min-width: 768px){
+html, body {height:100%; margin:1px; padding:0;}
+@media screen and (min-width:768px){
   html {/*overflow-y: hidden;*/
     /*background: url("img/security.jpg") no-repeat 0 0 fixed;*/
-      background-color: #f8cb45;
-    /*-webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;*/
-    -webkit-background-size: 100% 100%; -moz-background-size: 100% 100%;
-    -o-background-size: 100% 100%; background-size: 100% 100%;}}
+      background-color:#f8cb45;
+    /*-webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;*/
+    -webkit-background-size:100% 100%; -moz-background-size:100% 100%;
+    -o-background-size:100% 100%; background-size:100% 100%;}}
 /*body {overflow-y: scroll;}*/
-@media screen and (max-width: 767px){html{background-color:#f8cb45;}}
-body, table {color: #2b1b17;    
-  font: 18px Century Gothic, Verdana, Arial, Helvetica, sans-serif;}
-h1 {color: #493d26; font-size: 48px; font-variant: small-caps;
-    text-align:center; margin-top: .3em;}
-@media screen and (max-width: 767px){h1 {display:none;}}
-h2, h2 a {color: #f88017; font-size: 30px; font-variant: small-caps;
-  margin-top: .5em;}
-h2:before {content: ">\0020";}
-h3 {font-size: 23px; text-align: center; color: #483c32;}
-h4 {font-size: 21px;}
-em.red {color: #ff7f24;}
-a {text-decoration: none; border-style: none; font-weight: bold;} 
-a:active, a:focus {outline: none;}
-a:link {color: #571b7e;}
+@media screen and (max-width:767px){html{background-color:#f8cb45;}}
+body, table {color:#000000;
+  font:18px Optima, Candara, Calibri, Segoe, Segoe UI, Arial, sans-serif;}
+h1 {color:#000000; font-size:48px; font-variant:small-caps;
+    text-align:center; margin-top:.3em;}
+@media screen and (max-width:767px){h1 {display:none;}}
+h2, h2 a {color:#f88017; font-size:30px; font-variant:small-caps;
+  margin-top:.5em;}
+h2:before {content:">\0020";}
+h3 {font-size:23px; text-align: center; color:#483c32;}
+h4 {font-size:21px;}
+em.red {color:#ff7f24;}
+a {text-decoration:none; border-style:none; font-weight:bold;} 
+a:active, a:focus {outline:none;}
+a:link {color:#571b7e;}
 a:link:hover, a:visited:hover, 
 .normallink a:link:hover, .normallink a:visited:hover {
-  border-width: 0px 0px 1px 0px; border-style: dashed;}
-.normallink a:link, .normallink a:visited {font-weight: normal;
-  border-width: 0px 0px 1px 0px;}
-.hideoverflow{white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+  border-width:0px 0px 1px 0px; border-style:dashed;}
+.normallink a:link, .normallink a:visited {font-weight:normal;
+  border-width:0px 0px 1px 0px;}
+.hideoverflow{white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
 .back a:link, .back a:visited {
-  font-size: 14px;
-  font-weight: bold; border-style: none; color: #77a;}
-.back a:hover {border-style: none; background-color: #333; color: #f0e68c;}
-.small {font-size: 14px;}
-.showPDF a[href $='.pdf'], .showPDF a[href $='.pdf']:hover, .showPDF a.pdffile {padding-left: 18px !important; margin-left: 8px;
-  background: transparent url("img/pdf.png") center left no-repeat !important;
-  text-decoration: underline; border-style: none; font-size: x-small;}
+  font-size:14px;
+  font-weight:bold; border-style:none; color:#77a;}
+.back a:hover {border-style: none; background-color:#333; color:#f0e68c;}
+.small {font-size:14px;}
+.showPDF a[href $='.pdf'], .showPDF a[href $='.pdf']:hover, .showPDF a.pdffile {padding-left:18px !important; margin-left:8px;
+  background:transparent url("img/pdf.png") center left no-repeat !important;
+  text-decoration:underline; border-style: none; font-size: x-small;}
 .showPDF a[href $='.ps'], .showPDF a[href $='.ps']:hover, .showPDF a.psfile {padding-left: 18px !important; margin-left: 8px;
-  background: transparent url("img/ps.png") center left no-repeat !important;
-  text-decoration: underline; border-style: none; font-size: x-small;}
-.box {background-color: #00CCFF;
-  border: 2px dashed #A28975; padding: 5px; display: block;}
-table {padding-left: 1em;}
-th {vertical-align: top; text-align: right; width: 3em;
- padding-bottom: 10px;}
-td {vertical-align: top; padding-bottom: 10px; padding-left: 1.5em;}
+  background:transparent url("img/ps.png") center left no-repeat !important;
+  text-decoration:underline; border-style:none; font-size:x-small;}
+.box {background-color:#00CCFF;
+  border:2px dashed #A28975; padding:5px; display:block;}
+table {padding-left:1em;}
+th {vertical-align:top; text-align:right; width:3em;
+ padding-bottom:10px;}
+td {vertical-align:top; padding-bottom:10px; padding-left:1.5em;}
 #main ul li {padding-bottom: 10px;}
-#main {background-color: #fafaf5; /*rgb(250,250,245);*/
-  opacity: 0.94; filter: alpha(opacity=94);}
-#main img {opacity: 1; filter: alpha(opacity=100);}
-#main {background-color: rgba(250,250,245,.85);
-  opacity: 1; filter: alpha(opacity=100);}
-#main {min-height: 300px; heigth: 300px; padding: 1px 3px;}
-@media screen and (min-width: 768px){
-  #main {padding: 1em 3em; border-radius: 0px;}}  
-html>body #main {height: auto;}
+#main {background-color:#ffffff; /*rgb(255,255,255);*/
+  opacity:0.94; filter:alpha(opacity=94);}
+#main img {opacity:1; filter:alpha(opacity=100);}
+#main {background-color:rgba(255,255,255,.85);
+  opacity:1; filter:alpha(opacity=100);}
+#main {min-height:300px; heigth:300px; padding:1px 3px;}
+@media screen and (min-width:768px){
+  #main {padding:1em 3em; border-radius:0px;}}  
+html>body #main {height:auto;}
 #menulist ul, #menulist li, #menulist span, #menulist a {
-  margin: 0; padding: 0; position: relative; border-style: none;}
+  margin:0; padding:0; position:relative; border-style:none;}
 #menulist {background-color: #000000;
-  padding: 10px; border-radius: 12px 12px 0px 0px;}
-@media screen and (min-width: 768px){#main, #menulist {margin: 10px 10%;}}
-#menulist ul {list-style: none; text-align:center;}
-#menulist > ul > li {display: inline-block; float: none;}
-@media screen and (min-width: 768px){#menulist > ul > li {float: left;}}
-#menulist ul ul {display: none;
-  position: absolute; 
-  top: 30px; left: -1px;
-  min-width: 100%; *width: 100%; /* IE7 hack*/}
-@media screen and (min-width: 768px){
-  #menulist li:hover ul {display: block; z-index: 3;
-    opacity: .85; filter: alpha(opacity=85);}}
+  padding:10px; border-radius:12px 12px 0px 0px;}
+@media screen and (min-width:768px){#main, #menulist {margin:10px 10%;}}
+#menulist ul {list-style:none; text-align:center;}
+#menulist > ul > li {display:inline-block; float:none;}
+@media screen and (min-width:768px){#menulist > ul > li {float:left;}}
+#menulist ul ul {display:none;
+  position:absolute; 
+  top:30px; left:-1px;
+  min-width:100%; *width: 100%; /* IE7 hack*/}
+@media screen and (min-width:768px){
+  #menulist li:hover ul {display:block; z-index:3;
+    opacity:.85; filter:alpha(opacity=85);}}
 #menulist:after, #menulist ul:after { 
-  content: ''; display: block; clear: both;}
-#menulist a {color: #eee8aa; display: inline-block;
-  font: 20px Verdana, Arial, Helvetica, sans-serif;
-  text-align: center; text-decoration: none;}
-#menulist > ul > li.active a {color: #daa520;}
+  content:''; display:block; clear:both;}
+#menulist a {color:#eee8aa; display:inline-block;
+  font:20px Optima, Candara, Calibri, Segoe, Segoe UI, Arial, sans-serif;
+  text-align:center; text-decoration:none;}
+#menulist > ul > li.active a {color:#daa520;}
 #menulist ul > li a:hover {color: #ffdb58;}
-#menulist > ul > li.active a:hover {color: #ffdb58;}
-#menulist > ul > li a {background-color: #000000;
-  line-height: 30px; padding: 0px 9px; min-width: 6.7em;}
+#menulist > ul > li.active a:hover {color:#ffdb58;}
+#menulist > ul > li a {background-color:#000000;
+  line-height:30px; padding:0px 9px; min-width:6.7em;}
 #menulist li > ul > li a:hover {background-color:#0c0c0c;}
-#menulist li ul li {text-align: left; white-space: nowrap;}
-#menulist li ul li a {border-top: 0 none; 
-  display: block; font-size: 16px; line-height: 75%; 
-  padding: .5em 1em; text-align: left;}
-#menulist li ul li a:before {content: ">\0020";}
-.dlmulticols dl {float: left; padding-left: 1em; width: 15em;}
+#menulist li ul li {text-align:left; white-space:nowrap;}
+#menulist li ul li a {border-top:0 none; 
+  display:block; font-size:16px; line-height:75%; 
+  padding:.5em 1em; text-align:left;}
+#menulist li ul li a:before {content:">\0020";}
+.dlmulticols dl {float:left; padding-left:1em; width:15em;}
 #linkedin {float:right;}
 
