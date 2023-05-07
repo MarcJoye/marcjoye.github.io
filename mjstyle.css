@@ -1,5 +1,5 @@
 /*
- Last Modified On: Sun May  7 18:56:20 2023 (+0200)
+ Last Modified On: Sun May  7 19:11:08 2023 (+0200)
 */
 html, body {height:100%; margin:1px; padding:0;}
 @media screen and (min-width:768px){
@@ -19,7 +19,7 @@ body, table {color:#000000;
 h1 {color:#000000; font-size:48px; font-variant:small-caps;
     text-align:center; margin-top:.3em;}
 @media screen and (max-width:767px){h1 {display:none;}}
-h2, h2 a {color#ff5708; font-size:30px; font-variant:small-caps;
+h2, h2 a {color:#ff5708; font-size:30px; font-variant:small-caps;
   margin-top:.5em;}
 h2:before {content:">\0020";}
 h3 {font-size:23px; text-align: center; color:#483c32;}
