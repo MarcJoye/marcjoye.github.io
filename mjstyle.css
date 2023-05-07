@@ -1,11 +1,11 @@
 /*
- Last Modified On: Sat Sep  3 10:22:51 2022 (+0200)
+ Last Modified On: Sun May  7 18:49:56 2023 (+0200)
 */
 html, body {height:100%; margin:1px; padding:0;}
 @media screen and (min-width:768px){
   html {/*overflow-y: hidden;*/
     /*background: url("img/security.jpg") no-repeat 0 0 fixed;*/
-      background-color:#f8cb45;
+      background-color:#ffd208;
     /*-webkit-background-size:cover;
     -moz-background-size:cover;
     -o-background-size:cover;
@@ -13,21 +13,21 @@ html, body {height:100%; margin:1px; padding:0;}
     -webkit-background-size:100% 100%; -moz-background-size:100% 100%;
     -o-background-size:100% 100%; background-size:100% 100%;}}
 /*body {overflow-y: scroll;}*/
-@media screen and (max-width:767px){html{background-color:#f8cb45;}}
+@media screen and (max-width:767px){html{background-color:#ffd208;}}
 body, table {color:#000000;
   font:18px Optima, Candara, Calibri, Segoe, Segoe UI, Arial, sans-serif;}
 h1 {color:#000000; font-size:48px; font-variant:small-caps;
     text-align:center; margin-top:.3em;}
 @media screen and (max-width:767px){h1 {display:none;}}
-h2, h2 a {color:#f88017; font-size:30px; font-variant:small-caps;
+h2, h2 a {color#ff5708; font-size:30px; font-variant:small-caps;
   margin-top:.5em;}
 h2:before {content:">\0020";}
 h3 {font-size:23px; text-align: center; color:#483c32;}
 h4 {font-size:21px;}
-em.red {color:#ff7f24;}
+em.red {color:#ff0835;}
 a {text-decoration:none; border-style:none; font-weight:bold;} 
 a:active, a:focus {outline:none;}
-a:link {color:#571b7e;}
+a:link {color:#5708ff;}
 a:link:hover, a:visited:hover, 
 .normallink a:link:hover, .normallink a:visited:hover {
   border-width:0px 0px 1px 0px; border-style:dashed;}
@@ -45,8 +45,8 @@ a:link:hover, a:visited:hover,
 .showPDF a[href $='.ps'], .showPDF a[href $='.ps']:hover, .showPDF a.psfile {padding-left: 18px !important; margin-left: 8px;
   background:transparent url("img/ps.png") center left no-repeat !important;
   text-decoration:underline; border-style:none; font-size:x-small;}
-.box {background-color:#00CCFF;
-  border:2px dashed #A28975; padding:5px; display:block;}
+.box {background-color:#08b1ff;
+  border:2px dashed #d4ad00; padding:5px; display:block;}
 table {padding-left:1em;}
 th {vertical-align:top; text-align:right; width:3em;
  padding-bottom:10px;}
