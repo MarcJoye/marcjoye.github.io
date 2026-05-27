@@ -1,5 +1,5 @@
 /*
- Last Modified On: Sun May  7 19:11:08 2023 (+0200)
+ Last Modified On: Wed May 27 09:32:02 2026 (+0200)
 */
 html, body {height:100%; margin:1px; padding:0;}
 @media screen and (min-width:768px){
@@ -86,7 +86,7 @@ html>body #main {height:auto;}
 #menulist > ul > li.active a:hover {color:#ffdb58;}
 #menulist > ul > li a {background-color:#000000;
   line-height:30px; padding:0px 9px; min-width:6.7em;}
-#menulist li > ul > li a:hover {background-color:#0c0c0c;}
+#menulist li > ul > li a:hover {background-color:#000000;}
 #menulist li ul li {text-align:left; white-space:nowrap;}
 #menulist li ul li a {border-top:0 none; 
   display:block; font-size:16px; line-height:75%; 
