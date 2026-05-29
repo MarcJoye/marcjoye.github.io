@@ -492,10 +492,10 @@ main {
   text-decoration-color: var(--col-structure);
 }
 
-.red {
-  color: #7a5f00;
+.alert {
+  color: var(--col-alt-structure);
   font-style: normal;
-  font-weight: 800;
+  font-weight: normal;
 }
 
 .contact-card {
