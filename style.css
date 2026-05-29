@@ -398,8 +398,8 @@ main {
 }
 
 .page-subnav a:hover {
-  color: black;
-  background: var(--col-structure);
+  color: var(--col-structure);
+  background: transparent;
 }
 
 .page-subnav a::before {
