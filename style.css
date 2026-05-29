@@ -412,10 +412,6 @@ main {
   vertical-align: 0.05em;
 }
 
-.page-subnav a:hover::before {
-  background: black;
-}
-
 .content-panel {
   scroll-margin-top: 1rem;
 }
@@ -474,7 +470,6 @@ main {
   text-transform: uppercase;
   text-underline-offset: 0.2em;
 }
-
 
 .content-panel .back-link a,
 .content-panel .back-link a:link,
@@ -587,7 +582,6 @@ main {
   background: var(--col-structure);
 }
 
-
 /* Publications page */
 .publications-page .content-panel h3 {
   margin: 1.55rem 0 0.65rem;
@@ -623,7 +617,7 @@ main {
   padding: 0.05rem 0.32rem;
   border: 1px solid rgba(45, 45, 45, 0.18);
   border-radius: 5px;
-  background: rgba(255, 210, 8, 0.14);
+  background: rgba(var(--col-structure-rgb), 0.14);
   color: var(--col-dark) !important;
   font-size: 0.72rem;
   font-weight: 900;
