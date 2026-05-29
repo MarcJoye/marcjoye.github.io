@@ -152,7 +152,7 @@ a:hover {
   letter-spacing: -0.06em;
 }
 
-.yellow-rule {
+.structure-rule {
   width: 58px;
   height: 7px;
   margin: 1.35rem 0 1.25rem;
@@ -569,16 +569,18 @@ main {
   text-decoration: none;
 }
 
-/* Service page: make first list acronym/short name scan like <strong>...</strong>. */
+/* Service/Academia pages: make first list acronym/short name scan like <strong>...</strong>. */
 .service-page .content-panel li > a:first-child,
 .service-page .content-panel li > a:first-child:link,
-.service-page .content-panel li > a:first-child:visited {
-  color: black;
+.service-page .content-panel li > a:first-child:visited,
+.academia-page .content-panel li > a:first-child,
+.academia-page .content-panel li > a:first-child:link,
+.academia-page .content-panel li > a:first-child:visited {			  color: black;
   font-weight: 900;
 }
 
-.service-page .content-panel li > a:first-child:hover {
-  color: var(--col-structure);
+.service-page .content-panel li > a:first-child:hover,
+.academia-page .content-panel li > a:first-child:hover {			  color: var(--col-structure);
   background: tranparent;
 }
 
