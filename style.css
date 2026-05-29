@@ -434,8 +434,8 @@ main {
 }
 
 .content-panel a:hover {
-  color: black;
-  background: var(--col-structure);
+  color: var(--col-structure);
+  background: transparent;
 }
 
 .content-note {
@@ -578,8 +578,8 @@ main {
 }
 
 .service-page .content-panel li > a:first-child:hover {
-  color: black;
-  background: var(--col-structure);
+  color: var(--col-structure);
+  background: tranparent;
 }
 
 /* Publications page */
@@ -607,8 +607,8 @@ main {
 }
 
 .publications-page .content-panel li > a:first-child:hover {
-  color: black;
-  background: var(--col-structure);
+  color: var(--col-structure);
+  background: transparent;
 }
 
 .resource-link {
