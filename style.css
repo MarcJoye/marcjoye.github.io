@@ -826,6 +826,12 @@ main {
   text-decoration: none !important;
 }
 
+/* The solid diamond glyph fills its em-box, so it reads larger than the
+   other icons (especially on mobile). Shrink just this one to match. */
+.footer-links a[aria-label="Zama"] .footer-icon {
+  font-size: 0.95rem;
+}
+
 .footer-icon-linkedin {
   display: inline-grid;
   place-items: center;
