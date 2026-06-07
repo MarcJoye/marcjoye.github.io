@@ -5,9 +5,9 @@
   --col-alt-structure:   #15803d;
 
   /* Dark surfaces (header, footer) */
-  --col-header-from:     #171717;
-  --col-header-mid:      #222222;
-  --col-header-to:       #2b2b2b;
+  --col-header-from:     #0d2419;
+  --col-header-mid:      #133324;
+  --col-header-to:       #1c4230;
   --col-footer:          #13281f;
 
   /* Light surfaces (body, cards) */
