@@ -266,9 +266,16 @@ main {
    pages, so it reads smaller at the same size. Enlarge it to match, and
    force text (non-emoji) presentation. */
 .contact-panel .section-heading h2 .section-icon {
-  font-size: 1.65rem;
-  font-variant-emoji: text;
-  transform: translateY(-0.07em);
+  font-size: 1.4rem;
+}
+
+/* Inline SVG icons render identically across desktop and mobile, unlike
+   Unicode glyphs. Size them to the surrounding font-size. */
+.footer-icon svg,
+.section-heading h2 .section-icon svg {
+  width: 1em;
+  height: 1em;
+  display: block;
 }
 
 /* ─── List / items ───────────────────────────────────────────── */
@@ -835,10 +842,8 @@ main {
   text-decoration: none !important;
 }
 
-/* The solid diamond glyph fills its em-box, so it reads larger than the
-   other icons (especially on mobile). Shrink just this one to match.
-   Covers both the footer (Zama link has aria-label) and the contact page's
-   profile-links block (Zama is the first link there). */
+/* The diamond is a solid, filled mark, so it reads heavier than the
+   outline envelope. Keep its box a little smaller so the two balance. */
 .footer-links a[aria-label="Zama"] .footer-icon,
 .contact-actions a:first-child .footer-icon {
   font-size: 0.95rem;
