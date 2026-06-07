@@ -293,7 +293,7 @@ main {
 }
 
 .date {
-  color: var(--col-alt-structure);
+  color: #1f9d52;
   font-size: 0.82rem;
   font-weight: 900;
   text-transform: uppercase;
