@@ -262,6 +262,15 @@ main {
   flex: 0 0 auto;
 }
 
+/* The envelope glyph is lighter than the solid block icons used on other
+   pages, so it reads smaller at the same size. Enlarge it to match, and
+   force text (non-emoji) presentation. */
+.contact-panel .section-heading h2 .section-icon {
+  font-size: 1.65rem;
+  font-variant-emoji: text;
+  transform: translateY(-0.07em);
+}
+
 /* ─── List / items ───────────────────────────────────────────── */
 
 .list {
@@ -827,20 +836,23 @@ main {
 }
 
 /* The solid diamond glyph fills its em-box, so it reads larger than the
-   other icons (especially on mobile). Shrink just this one to match. */
-.footer-links a[aria-label="Zama"] .footer-icon {
+   other icons (especially on mobile). Shrink just this one to match.
+   Covers both the footer (Zama link has aria-label) and the contact page's
+   profile-links block (Zama is the first link there). */
+.footer-links a[aria-label="Zama"] .footer-icon,
+.contact-actions a:first-child .footer-icon {
   font-size: 0.95rem;
 }
 
 .footer-icon-linkedin {
   display: inline-grid;
   place-items: center;
-  width: 1.05rem;
-  height: 1.05rem;
+  width: 0.95rem;
+  height: 0.95rem;
   border: 1.5px solid var(--col-structure);
   border-radius: 2px;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 0.68rem;
+  font-size: 0.6rem;
   font-weight: 900;
 }
 
