@@ -308,6 +308,20 @@ main {
   color: var(--col-ink);
 }
 
+/* Linked event/paper titles match the publications page: inherit the dark
+   heading color, no underline, green on hover. */
+.item h3 a,
+.item h3 a:link,
+.item h3 a:visited {
+  color: var(--col-ink);
+  text-decoration: none;
+}
+
+.item h3 a:hover {
+  color: var(--col-structure);
+  background: transparent;
+}
+
 .updates-meta {
   margin: 0.25rem 0 0;
   color: var(--col-muted);
