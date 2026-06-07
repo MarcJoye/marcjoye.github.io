@@ -32,7 +32,7 @@
   /* Layout */
   --page-x-padding:      4.5rem;
   --radius:              18px;
-  --max-width:           1140px;
+  --max-width:           1100px;
 }
 
 /* ─── Reset ──────────────────────────────────────────────────── */
@@ -262,15 +262,8 @@ main {
   flex: 0 0 auto;
 }
 
-/* The envelope glyph is lighter than the solid block icons used on other
-   pages, so it reads smaller at the same size. Enlarge it to match, and
-   force text (non-emoji) presentation. */
-.contact-panel .section-heading h2 .section-icon {
-  font-size: 1.4rem;
-}
-
-/* Inline SVG icons render identically across desktop and mobile, unlike
-   Unicode glyphs. Size them to the surrounding font-size. */
+/* Inline SVG icons (footer Contact envelope) render identically across
+   desktop and mobile, unlike Unicode glyphs. Size them to the font-size. */
 .footer-icon svg,
 .section-heading h2 .section-icon svg {
   width: 1em;
