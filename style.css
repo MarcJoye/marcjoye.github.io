@@ -641,6 +641,7 @@ main {
   display: grid;
   grid-template-columns: 80px 1fr;
   gap: 1rem;
+  align-items: baseline;
 }
 
 .contact-list dt {
