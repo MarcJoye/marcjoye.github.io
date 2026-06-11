@@ -170,7 +170,7 @@ a:hover {
 
 .eyebrow {
   display: inline-block;
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
   padding: 0.35rem 0.65rem;
   border: 1px solid var(--col-structure);
   color: var(--col-structure);
