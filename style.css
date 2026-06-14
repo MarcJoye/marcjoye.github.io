@@ -1,8 +1,8 @@
 :root {
-  /* Brand cyans */
-  --col-structure:     #06b6d4;
-  --col-structure-rgb: 6, 182, 212;
-  --col-alt-structure: #0891b2;    
+  /* Brand cyan */
+  --col-structure:       #0ea5c6;
+  --col-structure-rgb:   14, 165, 198;
+  --col-alt-structure:   #0b7f98;
 
   /* Dark surfaces (header, footer) */
   --col-header-from:     #081920;
@@ -18,7 +18,7 @@
   --col-ink:             #112129;
   --col-muted:           #667983;
   --col-hero-h1:         #c8d2d7;
-  --col-hero-tagline:    #e7eef1;;
+  --col-hero-tagline:    #e7eef1;
   --col-hero-summary:    #d6dde1;
   --col-hero-para:       #d6dde1;
   --col-footer-small:    #bcc8cd;
