@@ -798,8 +798,9 @@ main {
 .mark {
   width: 42px;
   height: 42px;
-  display: inline-grid;
-  place-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: var(--col-structure);
   color: var(--col-ink);
   font-weight: 900;
