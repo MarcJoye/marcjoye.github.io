@@ -1,33 +1,33 @@
 :root {
-  /* Brand greens */
-  --col-structure:       #22c55e;
-  --col-structure-rgb:   34, 197, 94;
-  --col-alt-structure:   #15803d;
+  /* Brand cyans */
+  --col-structure:     #06b6d4;
+  --col-structure-rgb: 6, 182, 212;
+  --col-alt-structure: #0891b2;    
 
   /* Dark surfaces (header, footer) */
-  --col-header-from:     #0d2419;
-  --col-header-mid:      #133324;
-  --col-header-to:       #1c4230;
-  --col-footer:          #13281f;
+  --col-header-from:     #081920;
+  --col-header-mid:      #102731;
+  --col-header-to:       #183946;
+  --col-footer:          #10242d;
 
   /* Light surfaces (body, cards) */
-  --col-light:           #f6faf7;
+  --col-light:           #f7fafb;
   --col-surface:         #ffffff;
 
   /* Text */
-  --col-ink:             #10231a;   /* rich near-black for body text */
-  --col-muted:           #66736b;   /* secondary / meta text */
-  --col-hero-h1:         #b0b8b3;   /* hero title — soft gray-green */
-  --col-hero-tagline:    #dde3df;   /* tagline — lighter step */
-  --col-hero-summary:    #c4ccc7;   /* summary — between tagline & muted */
-  --col-hero-para:       #c4ccc7;   /* generic hero <p> */
-  --col-footer-small:    #b8c4bc;   /* footer subtitle — greenish gray */
+  --col-ink:             #112129;
+  --col-muted:           #667983;
+  --col-hero-h1:         #c8d2d7;
+  --col-hero-tagline:    #e7eef1;;
+  --col-hero-summary:    #d6dde1;
+  --col-hero-para:       #d6dde1;
+  --col-footer-small:    #bcc8cd;
 
   /* Borders & shadows */
-  --col-border:          #dce7df;
-  --col-border-strong:   #c6d6ca;   /* profile photo, heavier accents */
-  --shadow-card:         0 12px 26px rgba(16, 35, 26, 0.07);
-  --shadow-panel:        0 16px 34px rgba(16, 35, 26, 0.07);
+  --col-border:          #d9e4e8;
+  --col-border-strong:   #c5d5db;
+  --shadow-card:         0 12px 26px rgba(17, 33, 41, 0.07);
+  --shadow-panel:        0 16px 34px rgba(17, 33, 41, 0.07);
 
   /* Layout */
   --page-x-padding:      4.5rem;
@@ -293,7 +293,7 @@ main {
 }
 
 .date {
-  color: #1f9d52;
+  color: var(--col-structure);
   font-size: 0.82rem;
   font-weight: 900;
   text-transform: uppercase;
